@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><suite allow-return-values="true" name="End to End Suite" parallel="tests" thread-count="4">
+  <test name="Chrome" parallel="methods" thread-count="4">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.deere.testCases.WebFormsTestCases">
+        <methods>
+          <include name="test_TC6599_Techpubs"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

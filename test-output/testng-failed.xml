@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [End to End Suite]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Chrome(failed)" parallel="methods">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.deere.testCases.WebFormsTestCases">
+        <methods>
+          <include name="test_TC6599_Techpubs" invocation-numbers="0"/>
+          <include name="initTestSuite"/>
+          <include name="initWebDriver"/>
+          <include name="tearDown"/>
+          <include name="endSuite"/>
+        </methods>
+      </class> <!-- com.deere.testCases.WebFormsTestCases -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [End to End Suite] -->
